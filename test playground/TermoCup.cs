@@ -9,7 +9,7 @@ namespace test_playground
     class TermoCup : Cup
     {
         int TimeOfHotnes;
-        public TermoCup(string name = "null", double price = 0, int count = 0, ushort material = 1, int colour = 0xFFFFFF, int TimeOfHotnes = 0) : base(name, price, count)
+        public TermoCup(string name = "null", double price = 0, int count = 0, ushort material = 2, int colour = 0xFFFFFF, int TimeOfHotnes = 0) : base(name, price, count, material, colour)
         {
             this.TimeOfHotnes = TimeOfHotnes;
         }

@@ -8,15 +8,18 @@ namespace test_playground
 {
     class Item
     {
-        string name;
-        double price;
-        int count;
+        protected string name;
+        protected double price;
+        protected int count;
 
         public override  string ToString()
         {
+            return name+" "+ price.ToString() +" "+count.ToString();
+        }
+        public  virtual  string FancyOutput()
+        {
             return String.Format("name={0,-10} price={1,-5}amount={2,-5}", name, price.ToString(), count.ToString());
         }
-
         //--------------------construct-------
         public Item(string s, double d, int i)
         {
@@ -32,9 +35,12 @@ namespace test_playground
         }
         public Item(string input)
         {
-            name =input.Split(' ')[0];
-            price = double.Parse(input.Split(' ')[1]);
-            count =int.Parse(input.Split(' ')[2]);
+            var splitedInput = input.Replace(" ", "").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+            
+
+            name =splitedInput[0];
+            price = double.Parse(splitedInput[1]);
+            count =int.Parse(splitedInput[2]);
         }
         public Item(Item input)
         {
