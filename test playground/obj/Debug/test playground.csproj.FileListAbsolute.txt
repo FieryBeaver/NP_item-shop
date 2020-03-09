@@ -1,0 +1,7 @@
+C:\Users\BOBER\source\repos\test playground\test playground\bin\Debug\test playground.exe.config
+C:\Users\BOBER\source\repos\test playground\test playground\bin\Debug\test playground.exe
+C:\Users\BOBER\source\repos\test playground\test playground\bin\Debug\test playground.pdb
+C:\Users\BOBER\source\repos\test playground\test playground\obj\Debug\test playground.csprojAssemblyReference.cache
+C:\Users\BOBER\source\repos\test playground\test playground\obj\Debug\test playground.csproj.CoreCompileInputs.cache
+C:\Users\BOBER\source\repos\test playground\test playground\obj\Debug\test playground.exe
+C:\Users\BOBER\source\repos\test playground\test playground\obj\Debug\test playground.pdb
