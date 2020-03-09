@@ -10,11 +10,14 @@ namespace test_playground
     {
         protected enum Materials : ushort
         {
-            wood=0,
-            ceramic=1,
-            metal=2,
-            glass=3
+            wood = 0,
+            ceramic = 1,
+            metal = 2,
+            glass = 3,
+            
         }
+        public int Colour
+            {get;}
 
         protected Materials material;
         protected int colour;// should get  #123456 html hash

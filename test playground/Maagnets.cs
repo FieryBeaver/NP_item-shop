@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace test_playground
 {
-    class Maagnets : Item
+    sealed class Maagnets : Item
     {
         enum Materials:ushort
             {
@@ -14,6 +14,13 @@ namespace test_playground
                 ceramic,
                 glass
             }
-        public Maagnets(string a) { }
+        Materials material;
+        string style;
+        public Maagnets(string input) : base(input)
+        {
+            var splitedInput = input.Replace(" ", "").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            material = (Materials)int.Parse(splitedInput[3]);
+            style =splitedInput[4];
+        }
     }
 }

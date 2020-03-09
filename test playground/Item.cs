@@ -50,7 +50,10 @@ namespace test_playground
         }
         //------------------------------------
 
-             
+        public double Price
+        {
+            get;
+        }
         public double TotalPrice
         {
             get

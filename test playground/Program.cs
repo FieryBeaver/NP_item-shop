@@ -12,7 +12,12 @@ namespace test_playground
     
     class Program
     {
-             
+        static void PrintArr(object[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+                Console.WriteLine($" {a[i].ToString()} /n");
+        }
+
 
         static void Main(string[] args)
         {
@@ -20,7 +25,7 @@ namespace test_playground
 
 
 
-            Item[] a = new Item[400];
+            Item[] a = new Item[40];
             
 
             int iteraTRATRATRAtor = 0;
@@ -51,6 +56,28 @@ namespace test_playground
                 }
                 iteraTRATRATRAtor++;
             }
+
+
+            List<Item> term = new List<Item>() ;
+            
+            for (int i=0;i<a.Length;i++)
+            {
+                if (a[i] is TermoCup) term.Add(a[i]);
+                    
+            }
+            Console.WriteLine(term.ToString());
+
+
+            double redSum = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] is Cup & (((Cup)a[i]).Colour <0xFFFFFE |((Cup)a[i]).Colour > 0xAA0000  ))
+                {
+                    redSum += a[i].Price;
+                }
+
+            }
+
         }
     }
 }
